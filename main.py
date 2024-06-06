@@ -7,7 +7,8 @@ if __name__ == '__main__':
     while True:
         exibir_menu()
         opcao = input('Opção desejada: ')
-
+        os.system('cls')
+            
         match opcao:
             case '1':
                 # entrada de dados
