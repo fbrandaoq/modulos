@@ -1,10 +1,19 @@
+from datetime import date
 
+# função menu
 def exibir_menu():
     print('1 - Calcular quadrilátero')
     print('2 - Calcular círculo')
     print('3 - Calcular triângulo')
     print('4 - Calcular trapézio')
     print('5 - Sair do programa')
+    meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto','Setembro','Outubro', 'Novembro','Dezembro')
+
+    dia = date.today().day
+    mes = date.today().month
+    ano = date.today().year
+
+    print(f'{dia} de {meses[mes - 1]} de {ano}')
 
 # função do quadrilatero
 def calcular_quadrilatero(b, h):
